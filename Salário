@@ -1,0 +1,7 @@
+# Python
+NUMBER=int(input())
+QUANTIDADE=int(input())
+HORAT=float(input())
+SALARY= QUANTIDADE*HORAT
+print("NUMBER = %d" %NUMBER)
+print("SALARY = U$ %.2f" %SALARY)
