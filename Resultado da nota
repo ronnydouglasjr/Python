@@ -1,0 +1,10 @@
+# Python
+nota=float(input())
+nota2=float(input())
+resultado= nota+nota2
+print("Nota final = %.2f" %resultado)
+if resultado>=60.00:
+	print("Aprovado")
+else:
+	if resultado<60.00:
+		print("Reprovado")	
