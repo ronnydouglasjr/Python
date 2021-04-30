@@ -1,0 +1,28 @@
+# Python
+import PySimpleGUI as sg
+
+class SuperMercado:
+	def __init__(self):
+		layout=[
+			[sg.Text("Produto",size=(10,0)),sg.Input(size=(15,0),key='produto')],
+			[sg.Text("Quantidade",size=(10,0)),sg.Input(size=(15,0),key='quant')],
+			[sg.Text("Dinheiro",size=(10,0)),sg.Input(size=(15,0),key='dindin')],
+			[sg.Button('Calculo',size=(10,0))],
+			[sg.Output(size=(50,20))]
+		]
+
+		self.janela=sg.Window("Super Mercado",size=(300,200)).layout(layout)
+		self.button, self.values=self.janela.Read()
+
+	def Iniciar(self):
+		while True:
+			self.button, self.values=self.janela.Read()
+			valor=float(self.values['produto'])*float(self.values['quant'])
+			troco=float(self.values['dindin'])-valor
+			if troco>=0:
+				print(f'Troco de:',"%.2f R$"%troco)
+			else:
+				print(f'Dinheiro insuficiente, total de:',"%.2f R$"%valor,'\nFalta:',"%.2f R$"% abs(troco))
+
+tela=SuperMercado()
+tela.Iniciar()
