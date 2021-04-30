@@ -1,0 +1,12 @@
+# Python
+A= float(input())
+B= float(input())
+C= float(input())
+if (A>=B) and (A>=C):
+	print("A maior distancia pecorrida foi = %.2f" %A)
+else:
+	if (B>=A) and (B>=C):
+		print("A maior distancia pecorrida foi = %.2f" %B)
+	else:
+		if (C>=A) and (C>=B):
+			print("A maior distancia pecorrida foi = %.2f" %C)		
