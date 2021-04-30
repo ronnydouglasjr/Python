@@ -1,0 +1,15 @@
+# Python
+print("Voce vai digitar a temperatura em qual escala (C/F?")
+escala=(input())
+if escala=='C':
+	print("Digite a temperatura em Celsius: ")
+	C=float(input())
+	F= 9*C/5+32	
+	print("temperatura equivalente a Fahrenheit: %.2f" %F)
+else:
+	print("Digite a temperatura em Fahrenheit: ")
+	F=float(input())
+	C=(F-32)*5/9
+	print("temperatura equivalente em Celsius: %.2f" %C)
+
+
