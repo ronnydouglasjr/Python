@@ -1,0 +1,14 @@
+# Python
+primeiro=int(input())
+segundo=int(input())
+terceiro=int(input())
+
+
+if (primeiro<=segundo) and (primeiro<=terceiro):
+	print("Menor =%.0d" %primeiro)
+else:
+	if (segundo<=primeiro) and (segundo<=terceiro):
+		print("Menor = %.0d"%segundo)
+	else:
+		if (terceiro<=primeiro) and (terceiro<=segundo):
+			print("Menor = %.0d " %terceiro)		
