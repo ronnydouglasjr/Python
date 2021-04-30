@@ -1,0 +1,8 @@
+# Python
+print("Digite dois numeros inteiros:")
+X=int(input())
+Y=int(input())
+if (X % Y == 0) or (Y % X == 0):
+	print("Numeros múltiplus")
+else:
+	print("Numeros nao múltiplus")	
