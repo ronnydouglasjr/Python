@@ -1,0 +1,12 @@
+# Python
+a= float (input())
+b= float (input())
+c= float (input())
+
+delta= Exp(b, 2)-4*a*c 
+if a <= 0 and delta <0:
+	print("esta equacao nao possui raizes reais")	
+x1= (-b + RaizQ(delta))/(2*a)
+x2  (-b - RaizQ(delta))/(2*a)
+print("x1 = %.4f" %x1)
+print("x2 = %.4f" %x2)
