@@ -1,0 +1,16 @@
+# Python
+print("Hora inicial")
+inicial= int(input())
+print("Hora final")
+final=int(input())
+if inicial>final:
+	resultado= (24-inicial)+final
+	print("O jogo durou %.0d" %resultado,"hora(a)")
+else:
+		if inicial==final:
+			resultado= (inicial-final)+24
+			print("O jogo durou %.0d" %resultado,"hora(a)")
+		else:
+				if inicial<final: 
+					resultado= (final-inicial)
+					print("O jogo durou %.0d" %resultado,"hora(a)")
