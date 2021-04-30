@@ -1,0 +1,9 @@
+# Python
+print ("escreva o resultado do exame")
+exame= float(input())
+if exame>= 90.0 and exame<100.0:
+	print("Normal") 
+elif exame>=100.0 and exame<140.0:
+	print("Elevado")
+elif exame>=140.0:
+	print("Diabetes") 	
