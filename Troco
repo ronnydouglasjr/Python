@@ -1,0 +1,15 @@
+# Python
+#surpemercado 
+print("escreva o valor do produto")
+produto= float(input())
+print("escreva a quantidade do produto")
+quantidade = int(input())
+print("escreva dinheiro recebido")
+dinheiro = float(input())
+calculo = produto*quantidade
+troco=dinheiro-calculo
+
+if troco>=0:
+	print("seu trco e igual:", '%.2f R$'%troco)
+else:
+	print("dinheiro insuficiente, o total e:" '%.2f R$'%calculo) 
