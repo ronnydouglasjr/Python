@@ -1,0 +1,13 @@
+# Python
+hora= float(input())
+if hora<= 12:
+	print("Bom dia")
+else:
+	if hora>12.00 and hora<=17.59:
+		print("Boa tarde")
+	else:
+		if hora>17.59 and hora<=22.59:	
+			print("Boa noite")   
+		else:	
+			if hora>=24.00:
+				print("Boa madrugada")	
