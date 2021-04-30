@@ -1,0 +1,10 @@
+# Python
+a= float(input())
+b= float(input())
+c= float(input())
+trapezio= (a+b)*c/2
+triangulo= (a*b)/2
+quadrado= (a*a)
+print("Area do quadrado = %.4f" %quadrado)
+print("Area do triangulo = %.4f" %triangulo)
+print("Area do trapezia = %.4f" %trapezio)
