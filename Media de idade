@@ -1,0 +1,7 @@
+# Python
+nome1= str ("Maria silva")
+idade1= float (input())
+nome2= str ("Joao Melo")
+idade2= float (input()) 
+resultado= (idade1+idade2)/2
+print("A idade media de", nome1, "e", nome2, "%.1f" %resultado ,"anos")
